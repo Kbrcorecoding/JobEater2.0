@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "CV & Email Generator",
+  "version": "1.0",
+  "description": "Generate a CV and email template from job requirements.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "downloads",
+    "storage",
+    "activeTab"
+  ]
+}

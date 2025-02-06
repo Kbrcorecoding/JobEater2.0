@@ -1,0 +1,143 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1em;
+    box-sizing: border-box;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Textarea for job description */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    font-size: 1em;
+    margin-bottom: 20px;
+    resize: vertical;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Upload section styling */
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+/* Upload label */
+.upload-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+    color: #555;
+}
+
+/* File upload input */
+input[type="file"] {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #e9e9e9;
+    border-color: #007bff;
+}
+
+/* Buttons container */
+.buttons {
+    margin-top: 25px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    width: 200px;
+}
+
+.btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* Status message styling */
+.status-message {
+    font-size: 1.1em;
+    color: #28a745;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive design: smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    textarea {
+        height: 120px;
+    }
+}
