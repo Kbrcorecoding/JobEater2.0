@@ -116,7 +116,7 @@ async function sendToGroq(prompt) {
                 model: "llama3-8b-8192",
                 messages: [{ role: "user", content: prompt }],
                 temperature: 0.7,
-                max_tokens: 50 //max words response
+                max_tokens: 1000 //max words response
             }),
         });
 
