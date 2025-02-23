@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const API_KEY = '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'; // Replace with your actual Groq API key
+const API_KEY = 'none'; // Replace with your actual Groq API key
 const apiUrl = 'https://api.groq.com/openai/v1/chat/completions';
 
 async function generateText() {
